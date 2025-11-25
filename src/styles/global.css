@@ -5,3 +5,18 @@
     text-decoration: none;
     border: none;
 }
+
+/* root - variavel de estilo */
+:root {
+    --gold-color: #fdd700;
+    --black-color: rgb(0, 0, 0);
+    --gray-color: #505050;
+    --white-color: #ffffff;
+    --button-color: #3F8E00;
+    --button-shadow-color: #62BA1B;
+}
+
+:root {
+    --style-text: 'Arial', 'Helvetica', sans-serif;
+    --style-h: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif
+}
