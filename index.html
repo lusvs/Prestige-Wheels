@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,12 @@
     <link rel="stylesheet" href="/src/styles/global.css">
     <link rel="stylesheet" href="/src/styles/style.css">
 </head>
+
 <body>
     <header>
-        <div><p>Prestige <span style="color: var(--gold-color);">Wheels</span></p></div>
+        <div class="logo">
+            <p>Prestige <span style="color: var(--gold-color);">Wheels</span></p>
+        </div>
         <nav>
             <ul>
                 <li><a href="">início</a></li>
@@ -28,8 +32,10 @@
     </header>
     <main>
         <div class="container">
-            <h1>Luxo e <br> Exclusividade <br> <span style="color: var(--gold-color);">em Cada <br> Quilômetro</span></h1>
-            <p>Alugue os veículo smais sofisticados do mercado, Experiência premium <br> para momentos inesquecíveis.</p>
+            <h1>Luxo e <br> Exclusividade <br> <span style="color: var(--gold-color);">em Cada <br> Quilômetro</span>
+            </h1>
+            <p>Alugue os veículo smais sofisticados do mercado, Experiência premium <br> para momentos inesquecíveis.
+            </p>
             <div class="container-button">
                 <a href="">Ver nossa frota ></a>
                 <a href="">Criar conta</a>
@@ -38,22 +44,32 @@
         <div class="encontre-veiculos">
             <div class="area-branca">
                 <h1>Encontre o <span style="color: var(--gold-color);">Veiculo Perfeito</span></h1>
-                 <form action="">
-                    <label for="">Data de Retirada</label>
-                    <input type="date">
+                <form action="">
+                    <div class="allinputs-encontre-veiculos">
+                        <div class="input-encontre-veiculos">
+                            <label for="">Data de Retirada</label>
+                            <input type="date">
+                        </div>
 
-                    <label for="">Data de Devolução</label>
-                    <input type="date">
+                        <div class="input-encontre-veiculos">
+                            <label for="">Data de Devolução</label>
+                            <input type="date">
+                        </div>
 
-                    <label for="">Data de Retirada</label>
-                    <input type="text">
+                        <div class="input-encontre-veiculos">
+                            <label for="">Data de Retirada</label>
+                            <input type="text">
+                        </div>
 
-                    <button>buscar</button>
-                 </form>
+                        <button>buscar</button>
+                    </div>
+                </form>
             </div>
         </div>
+        
     </main>
     <footer></footer>
     <script src="src/scripts/script.js"></script>
 </body>
+
 </html>
