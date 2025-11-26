@@ -16,7 +16,13 @@
     --button-shadow-color: #62BA1B;
 }
 
+/* root - variavel de estilo */
 :root {
     --style-text: 'Arial', 'Helvetica', sans-serif;
     --style-h: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif
+}
+
+/* root - variavel de estilo */
+:root {
+    font-size: ;
 }
