@@ -6,13 +6,14 @@
     border: none;
 }
 
-/* root - variavel de estilo */
+/* root - variavel de cores */
 :root {
     --gold-color: #ffc400;
     --black-color: rgb(0, 0, 0);
     --gray-color: #2e2e2e;
     --white-color: #ffffff;
-    --button-color: #3F8E00;
+
+    --gray-color-p: #8f948c;
     --button-shadow-color: #62BA1B;
 }
 
@@ -22,7 +23,10 @@
     --style-h: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif
 }
 
-/* root - variavel de estilo */
-:root {
-    font-size: ;
+/* root - variavel de tamanhos */
+:root {   
+    --font-size-h1: 70px;
+    --font-size-h2: 40px;
+    --font-size-h3: 25px;
+    --font-size-p: 15px;
 }
