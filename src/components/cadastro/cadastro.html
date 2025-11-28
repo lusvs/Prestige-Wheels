@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Wheels - Criar Conta</title>
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/src/styles/cadastro.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="register-container">
+        <header class="header">
+            <div class="logo">
+            <a href="index.html"><img src="/src/assets/imgs/logo-pw-png.png" alt="logo"></a>
+            <h3>Prestige <span style="color: var(--gold-color);">Wheels</span></h3>
+        </div>
+            <h2>Criar Conta</h2>
+            <p class="subtitle">Junte-se à experiência premium</p>
+        </header>
+        
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="fullName">Nome Completo</label>
+                <div class="input-icon-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="fullName" name="fullName" placeholder="João Silva" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <div class="input-icon-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <div class="input-icon-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="********" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirmar Senha</label>
+                <div class="input-icon-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="********" required>
+                </div>
+            </div>
+
+            <div class="form-checkbox">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Aceito os **Termos de Uso**</label>
+            </div>
+            
+            <button type="submit" class="btn-create-account">Criar Conta</button>
+            
+            <p class="login-link">
+                Já tem uma conta? <a href="/src/components/login/login.html">**Faça login**</a>
+            </p>
+        </form>
+    </div>
+
+    <script src="/src/scripts/cadastro.js"></script>
+</body>
+</html>

@@ -17,104 +17,105 @@
             <a href="index.html"><img src="src/assets/imgs/logo-pw-png.png" alt="logo"></a>
             <h3>Prestige <span style="color: var(--gold-color);">Wheels</span></h3>
         </div>
-        <nav>
-            <ul>
-                <li><a href="">início</a></li>
-                <li><a href="">Veículos</a></li>
-                <li><a href="">Ferrari</a></li>
-                <li><a href="">Lamborguini</a></li>
-                <li><a href="">Porsh</a></li>
-            </ul>
-        </nav>
 
-        <div>
-            <button>Login</button>
-            <button>Cadastras</button>
+        <div class="usuario">
+            <a href="src/components/login/login.html">Login</a>
+            <a href="src/components/cadastro/cadastro.html">Cadastras</a>
         </div>
     </header>
     <main>
         <div class="container">
             <h1>Luxo e <br> Exclusividade <br> <span style="color: var(--gold-color);">em Cada <br> Quilômetro</span>
             </h1>
-            <p>Alugue os veículo smais sofisticados do mercado, Experiência premium <br> para momentos inesquecíveis.
+            <p>Alugue os veículos mais sofisticados do mercado, Experiência premium <br> para momentos inesquecíveis.
             </p>
             <div class="container-button">
-                <a href="">Ver nossa frota ></a>
-                <a href="">Criar conta</a>
+                <a href="#frota" id="">Ver nossa frota></a>
             </div>
         </div>
+
         <section class="encontre-veiculos">
             <div class="area-branca">
-                <h2>Encontre o <span style="color: var(--gold-color);">Veiculo Perfeito</span></h2>
-                <form action="">
+                <h2>Encontre o <span style="color: var(--gold-color);">Veículo Perfeito</span></h2>
+
+                <form id="vehicle-search-form" action="/search" method="GET">
                     <div class="allinputs-encontre-veiculos">
+
                         <div class="input-encontre-veiculos">
-                            <label for="">Data de Retirada</label>
-                            <input type="date">
+                            <label for="pickupDate">
+                                <p>Data de Retirada</p>
+                            </label>
+                            <input type="date" id="pickupDate" name="pickup_date" required>
                         </div>
 
                         <div class="input-encontre-veiculos">
-                            <label for="">Data de Devolução</label>
-                            <input type="date">
+                            <label for="returnDate">
+                                <p>Data de Devolução</p>
+                            </label>
+                            <input type="date" id="returnDate" name="return_date" required>
                         </div>
 
                         <div class="input-encontre-veiculos">
-                            <label for="">Data de Retirada</label>
-                            <input type="text">
+                            <label for="pickupLocation">
+                                <p>Local de Retirada</p>
+                            </label>
+                            <input type="text" id="pickupLocation" name="pickup_location"
+                                placeholder="Cidade ou Endereço" required>
                         </div>
 
-                        <button>buscar</button>
+                        <button type="submit">BUSCAR</button>
                     </div>
                 </form>
             </div>
         </section>
 
         <section class="nossas-categorias">
-            <h2>Nossa <span style="color: var(--gold-color);">Categoria</span></h2>
+            <h2>Nossas <span style="color: var(--gold-color);">Categorias</span></h2>
 
             <p>Escolha a catergoria que melhor se adapta às suas necessidades</p>
 
             <div class="marcas">
                 <div class="marca-descricao">
-                    <img src="src/assets/imgs/" alt="Logo Ferrari">
+                    <img style="height: 190px;" src="src/assets/imgs/escudo-ferrari-removebg-preview.png"
+                        alt="Logo Ferrari">
                     <h3>Ferrari</h3>
                     <p>sofisticação e elegância premium</p>
                 </div>
                 <div class="marca-descricao">
-                    <img src="src/assets/imgs/" alt="Logo Porsh">
+                    <img style="height: 190px;"" src=" src/assets/imgs/escudo-porsch-removebg-preview.png"
+                        alt="Logo Porsh">
                     <h3>Porsh</h3>
                     <p>Conforto e qualidade para o dia dia</p>
                 </div>
                 <div class="marca-descricao">
-                    <img src="src/assets/imgs/" alt="Logo Lamborguini">
+                    <img style="height: 200px;" src="src/assets/imgs/escudo-lamborghini-removebg-preview.png"
+                        alt="Logo Lamborguini">
                     <h3>Lamborguini</h3>
                     <p>O máximo em Exclusividade e performace</p>
                 </div>
             </div>
         </section>
 
-        <section class="destaque">
+        <section id="frota" class="destaque">
             <h2>Veículos em <span style="color: var(--gold-color);">Destaque</span></h2>
-            <p>Conheça alguns dos nossos modelos mais procurados</p>
+            <p>Conheça nossos modelos.</p>
             <div class="carros">
                 <div class="carros-descricao">
-                    <img src="src/assets/imgs/" alt="Logo Ferrari">
-                    <h3>Ferrari</h3>
-                    <p>sofisticação e elegância premium</p>
+                    <img src="src/assets/imgs/ferrari-portofino.webp" alt="Logo Ferrari">
+                    <h3>Ferrari Portofino</h3>
+                    <p>sofisticação e elegância premium</p>                    
                 </div>
                 <div class="carros-descricao">
-                    <img src="src/assets/imgs/" alt="Logo Porsh">
-                    <h3>Porsh</h3>
-                    <p>Conforto e qualidade para o dia dia</p>
+                    <img src="src/assets/imgs/porsche-911.webp" alt="Logo Porsh">
+                    <h3>Porsche 911</h3>
+                    <p>Conforto e qualidade para o dia dia</p>                   
                 </div>
                 <div class="carros-descricao">
-                    <img src="src/assets/imgs/" alt="Logo Lamborguini">
-                    <h3>Lamborguini</h3>
+                    <img src="src/assets/imgs/lamborghini-aventador.jpg" alt="Lamborguini">
+                    <h3>Lamborghini Aventador</h3>
                     <p>O máximo em Exclusividade e performace</p>
                 </div>
             </div>
-
-            <a href="">Ver todos os Veículos</a>
         </section>
     </main>
     <footer>
@@ -149,6 +150,10 @@
             <div>
                 <div></div>
                 <div>
+                    <div class="logo">
+                        <a href="index.html"><img src="src/assets/imgs/logo-pw-png.png" alt="logo"></a>
+                        <h3>Prestige <span style="color: var(--gold-color);">Wheels</span></h3>
+                    </div>
                     <p>Sua experiência premium em aluguel de veículos de luxo.</p>
                 </div>
                 <div></div>
@@ -156,9 +161,15 @@
             <div>
                 <ul>
                     <h3>Marcas</h3>
-                    <li><p>Ferrari</p></li>
-                    <li><p>Porsh</p></li>
-                    <li><p>Lamborguini</p></li>
+                    <li>
+                        <p>Ferrari</p>
+                    </li>
+                    <li>
+                        <p>Porsh</p>
+                    </li>
+                    <li>
+                        <p>Lamborghini</p>
+                    </li>
                 </ul>
             </div>
             <div>
@@ -172,10 +183,18 @@
             <div>
                 <ul>
                     <h3>Contato</h3>
-                    <li><p>contato@prestigewheels.com</p></li>
-                    <li><p>(11) 9999-9999</p></li>
-                    <li><p>Av. Paulista, 1000</p></li>
-                    <li><p>São Paulo - SP</p></li>
+                    <li>
+                        <p>contato@prestigewheels.com</p>
+                    </li>
+                    <li>
+                        <p>(11) 9999-9999</p>
+                    </li>
+                    <li>
+                        <p>Av. Paulista, 1000</p>
+                    </li>
+                    <li>
+                        <p>São Paulo - SP</p>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -186,5 +205,7 @@
         </article> <!--footer-creditos-->
     </footer>
     <script src="src/scripts/script.js"></script>
+    <script src="src/scripts/data.js"></script>
 </body>
+
 </html>

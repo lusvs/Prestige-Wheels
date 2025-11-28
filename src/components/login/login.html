@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login de usuario</title>
+    <link rel="shortcut icon" href="/src/assets/imgs/logo-pw-png.png" type="image/x-icon">
     <link rel="stylesheet" href="/src/styles/login.css">
+    <link rel="stylesheet" href="/src/styles/global.css">
 </head>
 <body>
     <div class="login-container">
-        <h1></h1>
-        <h2>Prestige <strong>Wheels</strong></h2>
+        <div class="logo">
+            <a href="index.html"><img src="/src/assets/imgs/logo-pw-png.png" alt="logo"></a>
+            <h3>Prestige <span style="color: var(--gold-color);">Wheels</span></h3>
+        </div>
         <form action="">
             <label for="txtUsuario">Usuario</label>
             <input type="text" id="txtUsuario" placeholder="Digite o seu nome" required>
@@ -18,6 +22,9 @@
             <input type="password" id="txtSenha" placeholder="Digite sua senha" required>
             <button onclick="loginSenac()" type="button">Entrar</button>
         </form>
+        <p class="login-link">
+                Não tem uma conta? <a href="/src/components/cadastro/cadastro.html">**Criar**</a>
+            </p>
  
         <p id="mensagem"></p>
     </div>

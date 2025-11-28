@@ -1,0 +1,168 @@
+/* Importação da Fonte e Estilos Globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container Principal do Formulário */
+.register-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo do Cabeçalho e Logo */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo i {
+    font-size: 24px;
+    color: #f7a435;
+    margin-right: 5px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+}
+
+.logo h1 strong {
+    color: #f7a435;
+}
+
+.header h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Estilo dos Grupos de Formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Estilo do Input com Ícone */
+.input-icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 45px;
+}
+
+.input-icon-container i {
+    color: #adb5bd;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.input-icon-container input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    height: 100%;
+    padding: 0;
+    font-size: 16px;
+    color: #495057;
+}
+
+.input-icon-container input::placeholder {
+    color: #adb5bd;
+}
+
+/* Estilo do Checkbox (Termos de Uso) */
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.form-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    accent-color: #f7a435;
+}
+
+.form-checkbox label {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.form-checkbox label strong {
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Estilo do Botão de Criar Conta */
+.btn-create-account {
+    width: 100%;
+    padding: 12px;
+    background-color: #f7a435;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-create-account:hover {
+    background-color: #e0932a;
+}
+
+/* Link de Login */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.login-link a {
+    color: #f7a435;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

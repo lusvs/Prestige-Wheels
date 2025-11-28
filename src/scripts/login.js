@@ -4,13 +4,13 @@ function loginSenac()
    let senha = document.getElementById('txtSenha').value;
    let menasagem = document.getElementById('mensagem');
  
-   if(usuario == 'admin' && senha == '123')
+   if(usuario == 'user' && senha == '123')
    {
     menasagem.style.color = 'green';
     menasagem.innerText = 'Usuario Correto';
 
     setTimeout(() => {
-        window.location.href = '';
+        window.location.href = '../../../index.html';
     }, 5000);
     }
 
